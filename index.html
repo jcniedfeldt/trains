@@ -11,16 +11,59 @@
 </head>
 
 <body>
-    <nav>
+    <div class="jumbotron text-center">
+        <h1 class="display-4">Trains Page</h1>
 
-    </nav>
-    <h1>Trains Page</h1>
+    </div>
+
     <div class="container">
         <div class="row">
-            <div class="col-md-4" id="trains">
+            <div class="col-md-12" id="trains">
 
             </div>
         </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-header bg-secondary">
+                        <h5 class="card-title text-white">Add Train</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="input-group mb-1">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">Train Name</span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Zurich" aria-label="Train Name"
+                                aria-describedby="basic-addon2">
+                        </div>
+                        <div class="input-group mb-1">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">Destination</span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Brussells" aria-label="Destination"
+                                aria-describedby="basic-addon2">
+                        </div>
+                        <div class="input-group mb-1">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">First Train Time</span>
+                            </div>
+                            <input data-format="hh:mm" type="text" class="form-control" placeholder="1500" aria-label="First Train Time"
+                                aria-describedby="basic-addon2">
+                        </div>
+                        <div class="input-group mb-1">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">Frequency</span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="30 Minutes" aria-label="Frequency"
+                                aria-describedby="basic-addon2">
+                        </div>
+                        <a href="#" class="btn btn-primary">Add Train</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
     </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
