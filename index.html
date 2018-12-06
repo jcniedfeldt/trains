@@ -18,13 +18,8 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-md-12" id="trains">
-
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <div class="card" style="width: 18rem;">
+            <div class="col-md-3">
+                <div class="card">
                     <div class="card-header bg-secondary">
                         <h5 class="card-title text-white">Add Train</h5>
                     </div>
@@ -35,35 +30,44 @@
                                     <span class="input-group-text" id="basic-addon1">Train Name</span>
                                 </div>
                                 <input type="text" class="form-control" placeholder="Zurich" aria-label="Train Name"
-                                    aria-describedby="basic-addon2" id="inputTrainName">
+                                    aria-describedby="basic-addon2" id="inputTrainName" required>
                             </div>
                             <div class="input-group mb-1">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text" id="basic-addon1">Destination</span>
                                 </div>
                                 <input type="text" class="form-control" placeholder="Brussells" aria-label="Destination"
-                                    aria-describedby="basic-addon2" id="inputTrainDestination">
+                                    aria-describedby="basic-addon2" id="inputTrainDestination" required>
                             </div>
                             <div class="input-group mb-1">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text" id="basic-addon1">First Train Time</span>
                                 </div>
                                 <input type="number" class="form-control" placeholder="1500" aria-label="First Train Time"
-                                    aria-describedby="basic-addon2" id="inputTrainTime">
+                                    aria-describedby="basic-addon2" id="inputTrainTime" required>
                             </div>
                             <div class="input-group mb-1">
                                 <div class="input-group-prepend">
                                     <span class="input-group-text" id="basic-addon1">Frequency</span>
                                 </div>
                                 <input type="number" class="form-control" placeholder="30 Minutes" aria-label="Frequency"
-                                    aria-describedby="basic-addon2" id="inputTrainFrequency">
+                                    aria-describedby="basic-addon2" id="inputTrainFrequency" required>
                             </div>
                             <a class="btn btn-primary text-white" id="addTrain">Add Train</a>
                         </form>
+                        <div class="alert alert-danger" role="alert" id="addTrainErrorMessage" hidden>
+                        </div>
+                        <div class="alert alert-success" role="alert" id="addTrainSuccessMessage" hidden>
+                        </div>
                     </div>
                 </div>
 
             </div>
+            <div id="trains">
+
+            </div>
+        </div>
+        <div class="row" id="trains-old">
         </div>
 
     </div>
